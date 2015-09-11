@@ -12,7 +12,7 @@ def update_blocks(blocks, new_l, new_r, c, d):
     if blocks[i_l - 1][0] == new_l:
         blocks[i_l - 1][1] += c
         blocks[i_l - 1][2] += d
-        if blocks[i_r - 1][0] == new_r:
+        if blocks[i_r ][0] == new_r:
             return
         else:
             blocks.insert(i_r, [new_r, blocks[i_r - 1][1]-c, blocks[i_r - 1][2]-d])
@@ -31,5 +31,12 @@ def q2(blocks, new_l, new_r, d):
 
 def q3(blocks, l, r):
     pass
+
+
+a = [[0, 2, 0], [10, 3, 0], [25, 0, 0], [80, 4, 0]]
+
+q1(a,10,50,2)
+print a
+
 
 
