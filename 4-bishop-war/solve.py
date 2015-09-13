@@ -5,7 +5,7 @@ translate['.'] = "0"
 solutions = dict()
 
 def place(m, row_idx, grid, diags, mask):
-    if (row_idx, diags) in solutions.keys():
+    if (row_idx, diags) in solutions:
         return solutions[row_idx, diags]
     ways = 0
     row = grid[row_idx]
